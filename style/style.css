@@ -1,0 +1,73 @@
+
+
+header{position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; z-index: 999;}
+header > a.logo{top: 35px; margin: 40px 0 0 100px;}
+header > a.logo > img{ width: 270px; height: 25px; display: inline-block;}
+header > nav{margin: 45px 100px 0 0;}
+header > nav > ul{}
+header > nav > ul > li{float: left; margin: 0 16px;}
+header > nav > ul > li > a{color: #fff; text-decoration: none; outline: none;}
+
+
+
+section.main_intro{}
+section.main_intro > div{position: relative; height: 100vh; background: url('../img/main/main.jpg'); background-position: center; background-repeat: no-repeat; text-align: right;}
+section.main_intro > div > div{position: absolute; top: 50%; transform: translateY(-50%); right: 100px; color: #fff;}
+section.main_intro > div > div > h1{font-size: 38px;}
+section.main_intro > div > div > p{font-size: 18px; margin: 20px 0 40px; line-height: 25px;}
+section.main_intro > div > div > button{font: 16px; background: #0464b3; color: #fff; border: 0; outline: none; padding: 20px 45px;}
+section.main_intro > div > div > button:hover{background-color: salmon;}
+
+
+section.main_about{height: 430px; text-align: center; margin-top: 100px;}
+section.main_about > h2{font-size: 30px;}
+section.main_about > p{font-size: 20px; line-height: 30px; margin: 40px 0 50px;}
+section.main_about > img{width: 80px;}
+
+section.main_work{height: 700px;border: 1px solid #c6c6c6; position: relative;}
+section.main_work > div{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+section.main_work > div > ul{height: 100%; display: flex; margin: 0 auto; justify-content: center;}
+section.main_work > div > ul > li{ margin: 0 10px; width: 280px;}
+section.main_work > div > ul > li > a{overflow: hidden; display: inline-block; height: 280px; width: 280px;}
+section.main_work > div > ul > li > a > img{ transition: 800ms;}
+section.main_work > div > ul > li > a > img:hover{transform: scale(1.5);}
+section.main_work > div > ul > li > h2{font-size: 20px; margin: 20px 0 10px;}
+section.main_work > div > ul > li > p{font-size: 16px; line-height: 25px;}
+
+section.main_vid{text-align: center;}
+section.main_vid > h2{font-size: 30px; margin-top: 100px;}
+section.main_vid > p{font-size: 16px; line-height: 30px; margin: 40px 0;}
+section.main_vid > iframe{width: 80%; height: 100vh; margin-bottom: 115px;}
+
+section.main_ment{height: 500px; width: 100%; background: #0464b3;display: flex; flex-direction: column; align-items: center; color: #fff;}
+section.main_ment > h2{font-size: 20px; padding: 160px 0 60px;}
+section.main_ment > p{font-size: 24px; text-align: center; line-height: 36px;}
+section.main_ment > ul{margin: 50px 0 0;}
+section.main_ment > ul > li{float: left; margin: 0 10px;}
+section.main_ment > ul > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%;}
+section.main_ment > ul > li.active_btn > span{opacity: 1; width: 15px; height: 15px;}
+
+section.main_brand{height: 200px;}
+section.main_brand > ul{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+section.main_brand > ul > li{}
+section.main_brand > ul > li > img{}
+
+section.main_hire{height: 750px; background: #f5f5f5; display: flex;}
+section.main_hire > div {margin: 0 auto; text-align: center;}
+section.main_hire > div > h2{font-size: 30px; padding: 100px 0 40px;}
+section.main_hire > div > p{font-size: 16px; line-height: 30px;}
+section.main_hire > div > form{width: 670px; border: 1px solid salmon; margin: 40px 0 0;}
+section.main_hire > div > form > input{border: none; outline: none; height: 47px;}
+section.main_hire > div > form > input.hire_name{width: 320px;}
+section.main_hire > div > form > input.hire_Email{width: 320px;}
+section.main_hire > div > form > input.hire_title{width: 100%; margin: 30px 0;}
+section.main_hire > div > form > input.hire_comment{width: 100%; height: 170px; margin-bottom: 30px;}
+section.main_hire > div > form > button{background: #0464b3; padding: 23px 35px; border: none; color: #fff;}
+
+footer{height: 330px; background: #141414; color: #fff;}
+footer > div{}
+footer > div > ul{}
+footer > div > ul > li{float: left;}
+footer > div > ul > li > a{color: #fff; text-decoration: none;}
+footer > div > h3{clear: both;}
+footer > div > span{}

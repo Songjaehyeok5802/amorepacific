@@ -1,6 +1,6 @@
 
 
-header{position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; z-index: 999;}
+header{position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; z-index: 999; background: #0464b3; height: 80px;}
 header > a.logo{top: 35px; margin: 40px 0 0 100px;}
 header > a.logo > img{ width: 270px; height: 25px; display: inline-block;}
 header > nav{margin: 45px 100px 0 0;}
@@ -44,7 +44,7 @@ section.main_ment > h2{font-size: 20px; padding: 160px 0 60px;}
 section.main_ment > p{font-size: 24px; text-align: center; line-height: 36px;}
 section.main_ment > ul{margin: 50px 0 0;}
 section.main_ment > ul > li{float: left; margin: 0 10px;}
-section.main_ment > ul > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%;}
+section.main_ment > ul > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%; cursor: pointer;}
 section.main_ment > ul > li.active_btn > span{opacity: 1; width: 15px; height: 15px;}
 
 section.main_brand{height: 200px;}
@@ -56,18 +56,19 @@ section.main_hire{height: 750px; background: #f5f5f5; display: flex;}
 section.main_hire > div {margin: 0 auto; text-align: center;}
 section.main_hire > div > h2{font-size: 30px; padding: 100px 0 40px;}
 section.main_hire > div > p{font-size: 16px; line-height: 30px;}
-section.main_hire > div > form{width: 670px; border: 1px solid salmon; margin: 40px 0 0;}
-section.main_hire > div > form > input{border: none; outline: none; height: 47px;}
-section.main_hire > div > form > input.hire_name{width: 320px;}
-section.main_hire > div > form > input.hire_Email{width: 320px;}
-section.main_hire > div > form > input.hire_title{width: 100%; margin: 30px 0;}
-section.main_hire > div > form > input.hire_comment{width: 100%; height: 170px; margin-bottom: 30px;}
+section.main_hire > div > form{width: 670px;margin: 40px 0 0;}
+section.main_hire > div > form input{border: none; outline: none; height: 47px; padding-left: 10px;}
+section.main_hire > div > form > div{display: flex; justify-content: space-between;}
+section.main_hire > div > form > div > input.hire_name{width: 310px;}
+section.main_hire > div > form > div > input.hire_Email{width: 310px;}
+section.main_hire > div > form > input.hire_title{width: 660px; margin: 30px 0;}
+section.main_hire > div > form > input.hire_comment{width: 660px; height: 170px; margin-bottom: 30px;}
 section.main_hire > div > form > button{background: #0464b3; padding: 23px 35px; border: none; color: #fff;}
 
 footer{height: 330px; background: #141414; color: #fff;}
-footer > div{}
-footer > div > ul{}
-footer > div > ul > li{float: left;}
-footer > div > ul > li > a{color: #fff; text-decoration: none;}
-footer > div > h3{clear: both;}
-footer > div > span{}
+footer > div{display: flex; flex-direction: column; align-items: center;}
+footer > div > ul{margin: 90px 0 0;}
+footer > div > ul > li{float: left; margin: 0 15px;}
+footer > div > ul > li > a{color: #fff; text-decoration: none; font-size: 15px;}
+footer > div > h3{clear: both; margin: 55px 0; font-size: 20px;}
+footer > div > span{margin: 0 0 80px; font-size: 15px;}

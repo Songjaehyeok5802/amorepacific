@@ -6,6 +6,7 @@
     <!-- Css Stlye -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/logo/logo_flower.png" type="image/x-icon">
     <title>AMORE PACIFIC</title>
 </head>
 
@@ -43,7 +44,7 @@
     </section>
 
     <!-- Main_About -->
-    <section class="main_about">
+    <section class="main_about scrollAni">
         <h2>About Us</h2>
         <p>
             아모레퍼시픽은 아름다움으로 세상을 변화시키는 ‘원대한 기업(Great Beauty Company)’으로의 도약을 준비합니다. <br />
@@ -82,7 +83,7 @@
     </section>
 
     <!-- Main_Vid -->
-    <section class="main_vid">
+    <section class="main_vid scrollAni">
         <h2>AbsoluTea & TIME RESPONSE</h2>
         <p>
             17년의 연구와 228,000번의 실험 끝에 탄생한 피부 과학의 결정체 앱솔루티 ™가 <br />
@@ -94,11 +95,41 @@
 
     <!-- Main_Ment -->
     <section class="main_ment">
-        <h2>Philosophy</h2>
-        <p>
-            " 아모레퍼시픽은 아시안 뷰티(Asian Beauty)의 가치를 대표하는 기업으로, <br />
-             아름답고 건강하게 살고자 하는 인류의 영원한 꿈을 실현하고자 합니다. "
-        </p>
+        <ul class="ment_txt_wrap">
+            <li>
+                <h2>Philosophy</h2>
+                <p>
+                    " 아모레퍼시픽은 아시안 뷰티(Asian Beauty)의 가치를 대표하는 기업으로, <br />
+                     아름답고 건강하게 살고자 하는 인류의 영원한 꿈을 실현하고자 합니다. "
+                </p>
+            </li>
+            <li>
+                <h2>AMOREPACIFIC</h2>
+                <p>
+                    "우리만이 창조할 수 있는 아름다움으로 새로운 미(美)의 역사를 써 내려가며, <br />
+                    더 아름다운 세상을 향한 원대한 여정을 이어가고 있습니다."
+                </p>
+            </li>
+            <li class="active_ment">
+                <h2>Heritage Ingredients</h2>
+                <p>
+                    "자연의 참된 이치를 품은 아시아의 원료 식물은 아모레퍼시픽이 <br />
+                    추구하는 아시안 뷰티(Asian Beauty)의 출발점입니다."
+                </p>
+            </li>
+            <li>
+                <h2>Mission & Principles</h2>
+                <p>
+                    "아모레퍼시픽그룹은 ‘아름다움과 건강으로 인류에 공헌하겠다’는 창업 정신을 품고, <br />
+                    ‘사람을 아름답게, 세상을 아름답게’하는 미의 여정을 한걸음 한걸음 내딛고 있습니다."
+                </p>
+            </li>
+
+        </ul>
+        
+
+        
+
         <ul class="list_btn_wrap">
             <li class="active_btn"><span></span></li>
             <li><span></span></li>
@@ -118,6 +149,7 @@
         </ul>
     </section>
 
+    <!-- Main_Hire -->
     <section class="main_hire">
         <div class="hire_wrap">
             <h2>We need you</h2>
@@ -131,8 +163,8 @@
                     <input type="text" placeholder="Your Email" class="hire_Email">
                 </div>
                 <input type="text" placeholder="Your Title" class="hire_title">
-                <input type="text" placeholder="Your Comment" class="hire_comment">
-                <button type="submit">SEND MESSAGE</button>
+                <textarea type="text" placeholder="Your Comment" class="hire_comment"></textarea>
+                <button type="button" onclick=clickBtn_hire()>SEND MESSAGE</button>
             </form>
         </div>
     </section>

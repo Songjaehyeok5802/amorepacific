@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* Common */
 
@@ -16,12 +16,26 @@ input, textarea{font-weight: 300;}
 
 /* Header */
 header{position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; align-items: center; z-index: 999;transition: 800ms; height: 80px;}
-header > a.logo{top: 35px; margin: 0 0 0 100px;}
+header:hover{background-color: #0464b3;}
+header > a.logo{margin: 0 0 0 100px;}
 header > a.logo > img{ width: 270px; height: 25px; display: inline-block;}
 header > nav{margin: 0 100px 0 0;}
-header > nav > ul{}
-header > nav > ul > li{float: left; margin: 0 16px;}
-header > nav > ul > li > a{color: #fff; text-decoration: none; outline: none;}
+header > nav > ul{ display: inline-block;}
+header > nav > ul > li{float: left; padding: 32px 16px; cursor: pointer; vertical-align: middle;}
+header > nav > ul > li > a{color: #fff; text-decoration: none; outline: none;display: inline-block;font-size: 16px;line-height: 16px;vertical-align: middle;}
+
+header > nav > ul > li:hover > div{opacity: 1; pointer-events: all;}
+header > nav > ul > li > div{position: absolute; left: 0; margin: 34px 0; padding: 40px 0; width: 100%; background-color: #e4e3e3; display: flex; justify-content: center; opacity: 0; pointer-events: none; transition: 400ms;}
+header > nav > ul > li > div > div{ width:300px; margin: auto 100px auto 0;}
+header > nav > ul > li > div > div > h3{font-size: 30px; margin-bottom: 20px;}
+header > nav > ul > li > div > div > p{ font-size: 16px; line-height: 25px;}
+header > nav > ul > li > div > ul{margin-left: 40px; }
+header > nav > ul > li > div > ul > ul{float:left;}
+header > nav > ul > li > div > ul > ul > li{margin: 20px 50px;}
+header > nav > ul > li > div > ul > ul > li:first-child{margin: 0px 50px 20px;}
+header > nav > ul > li > div > ul > ul > li > a{text-decoration: none; color: #000; font-weight: 400;}
+header > nav > ul > li > div > ul > ul > li > a > strong{font-weight: 700; }
+
 
 
 /* Intro */

@@ -75,20 +75,20 @@ section.main_vid > iframe{width: 80%; height: calc(100vh - 80px); margin-bottom:
 /* Ment */
 section.main_ment{height: 500px; width: 100%; background: #0464b3; color: #fff; position: relative;}
 section.main_ment > ul.ment_txt_wrap{position: absolute; height: 100%; width: 100%;}
-section.main_ment > ul.ment_txt_wrap > li{text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; pointer-events: none;}
+section.main_ment > ul.ment_txt_wrap > li{text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; pointer-events: none;  transition: 800ms;}
 section.main_ment > ul.ment_txt_wrap > li.active_ment{opacity: 1; pointer-events: all;}
 section.main_ment > ul.ment_txt_wrap > li > h2{font-size: 20px; padding-bottom: 50px;}
 section.main_ment > ul.ment_txt_wrap > li > p{font-size: 24px;line-height: 36px;}
 
 section.main_ment > ul.list_btn_wrap{position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px;}
 section.main_ment > ul.list_btn_wrap > li{float: left; margin: 0 10px;}
-section.main_ment > ul.list_btn_wrap > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%; cursor: pointer;}
+section.main_ment > ul.list_btn_wrap > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%; cursor: pointer;  transition: 800ms;}
 section.main_ment > ul.list_btn_wrap > li.active_btn > span{opacity: 1; width: 15px; height: 15px;}
 
 /* Brand */
 section.main_brand{height: 200px;}
 section.main_brand > ul{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-section.main_brand > ul > li{}
+section.main_brand > ul > li{width: 25%; text-align: center;}
 section.main_brand > ul > li > img{}
 
 /* Hire */

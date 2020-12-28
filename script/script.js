@@ -1,5 +1,8 @@
 console.clear();
 
+
+
+// Scroll Fade In, Header Bg Change 
 const headerBg = document.querySelector("header");
 const work_wrap = document.querySelector("div.work_wrap");
 const work_list = document.querySelectorAll("div.work_wrap > ul > li");
@@ -33,6 +36,28 @@ function scrollEvent(){
     }
 }
 
+// Ment Change
+const list_btn = document.querySelectorAll("ul.list_btn_wrap > li");
+const list_ment = document.querySelectorAll("ul.ment_txt_wrap > li");
+function click_Mnet_list(){
+    for(let i = 0 ; i < list_btn.length ; i++){
+        list_btn[i].addEventListener("click", ()=>{
+            init_Ment_list();
+            list_btn[i].classList.add("active_btn");
+            list_ment[i].classList.add("active_ment");
+        })
+    }
+}
+function init_Ment_list(){
+    for(let i = 0 ; i < list_btn.length ; i++){
+        list_btn[i].classList.remove("active_btn");
+        list_ment[i].classList.remove("active_ment");
+    }
+}
+click_Mnet_list();
+
+
+// Hire Input Alert
 const hire_name = document.querySelector(".hire_name");
 const hire_Email = document.querySelector(".hire_Email");
 const hire_title = document.querySelector(".hire_title");
@@ -45,3 +70,4 @@ function clickBtn_hire(e){
         alert("감사합니다.")
     }
 }
+

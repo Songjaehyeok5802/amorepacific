@@ -3,7 +3,7 @@ console.clear();
 
 
 // Scroll Fade In, Header Bg Change 
-const headerBg = document.querySelector("header");
+const header = document.querySelector("header");
 const work_wrap = document.querySelector("div.work_wrap");
 const work_list = document.querySelectorAll("div.work_wrap > ul > li");
 const fade_in_contents = document.querySelectorAll(".scrollAni");
@@ -11,11 +11,12 @@ const fade_in_contents = document.querySelectorAll(".scrollAni");
 window.addEventListener('scroll', scrollEvent);
 function scrollEvent(){
     let curScroll = document.documentElement.scrollTop;
+
     // Header Bg Change
     if(curScroll < 100){
-        headerBg.style.background = "transparent";
+        header.style.background = "";
     }else{
-        headerBg.style.background = "#0464b3";
+        header.style.background = "#0464b3";
     }
 
     // List Fade In
@@ -34,6 +35,14 @@ function scrollEvent(){
             fade_in_contents[i].classList.add('fade_in')
         }
     }
+}
+
+
+// Header Nav Bar
+const nav_bar = document.querySelector("div.nav_bar");
+nav_bar.addEventListener("click", click_nav);
+function click_nav(){
+    nav_bar.classList.toggle("active_nav");
 }
 
 

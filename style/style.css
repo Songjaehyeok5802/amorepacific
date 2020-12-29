@@ -74,10 +74,10 @@ section.main_intro > div > div > button:hover{background-color: #fff; color: #00
 }
 
 /* About */
-section.main_about{height: 430px; text-align: center; margin-top: 100px;}
-section.main_about > h2{font-size: 30px;}
-section.main_about > p{font-size: 20px; line-height: 30px; margin: 40px 0 50px;}
-section.main_about > img{width: 80px;}
+section.main_about{text-align: center; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+section.main_about > h2{font-size: 30px; margin-top: 100px;}
+section.main_about > p{font-size: 20px; width: 50%; line-height: 30px; margin: 40px 0 50px;}
+section.main_about > img{width: 80px; margin-bottom: 100px;}
 
 /* Work */
 section.main_work{width: 100%; display: inline-block; border-top: 1px solid #c6c6c6; border-bottom: 1px solid #c6c6c6; position: relative;}
@@ -105,15 +105,15 @@ section.main_work > div > ul > li > p{font-size: 16px; line-height: 25px;}
 }
 
 /* Vid */
-section.main_vid{text-align: center; opacity: 0; position: relative;}
+section.main_vid{text-align: center; opacity: 0; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 section.main_vid > h2{font-size: 30px; margin-top: 100px;}
-section.main_vid > p{font-size: 20px; line-height: 30px; margin: 40px 0;}
+section.main_vid > p{font-size: 20px; line-height: 30px; margin: 40px 0; width: 820px;}
 section.main_vid > iframe{width: 80%; height: calc(100vh - 80px); margin-bottom: 115px;}
 
 /* Ment */
 section.main_ment{height: 500px; width: 100%; background: #0464b3; color: #fff; position: relative;}
 section.main_ment > ul.ment_txt_wrap{position: absolute; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;}
-section.main_ment > ul.ment_txt_wrap > li{text-align: center; opacity: 0; pointer-events: none;  transition: 800ms; position: absolute;}
+section.main_ment > ul.ment_txt_wrap > li{text-align: center; opacity: 0; pointer-events: none;  transition: 800ms; position: absolute;  display: flex; justify-content: center; align-items: center; flex-direction: column;}
 section.main_ment > ul.ment_txt_wrap > li.active_ment{opacity: 1; pointer-events: all;}
 section.main_ment > ul.ment_txt_wrap > li > h2{font-size: 20px; padding-bottom: 50px;}
 section.main_ment > ul.ment_txt_wrap > li > p{font-size: 24px;line-height: 36px; width: 600px;}
@@ -127,10 +127,10 @@ section.main_ment > ul.list_btn_wrap > li.active_btn > span{opacity: 1; width: 1
 section.main_brand{height: 200px;}
 section.main_brand > ul{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
 section.main_brand > ul > li{width: 25%; text-align: center;}
-section.main_brand > ul > li > img{}
+section.main_brand > ul > li > img{width: 80%;}
 
 /* Hire */
-section.main_hire{height: 750px; background: #f5f5f5; display: flex;}
+section.main_hire{ background: #f5f5f5; display: flex;}
 section.main_hire > div {margin: 0 auto; text-align: center;}
 section.main_hire > div > h2{font-size: 30px; padding: 100px 0 40px;}
 section.main_hire > div > p{font-size: 16px; line-height: 30px;}
@@ -141,7 +141,7 @@ section.main_hire > div > form > div > input.hire_name{width: 310px;}
 section.main_hire > div > form > div > input.hire_Email{width: 310px;}
 section.main_hire > div > form > input.hire_title{width: 660px; margin: 30px 0;}
 section.main_hire > div > form > textarea.hire_comment{width: 660px; height: 170px; font-size: 16px; margin-bottom: 30px; resize: none;border: none; outline: none; padding:15px 0 0 10px;}
-section.main_hire > div > form > button{background: #0464b3; padding: 23px 35px; border: none; color: #fff; border-radius: 10px; outline: none;}
+section.main_hire > div > form > button{background: #0464b3; padding: 23px 35px; border: none; color: #fff; border-radius: 10px; outline: none; margin-bottom: 100px;}
 
 /* Footer */
 footer{display: inline-block; background: #141414; color: #fff; width: 100%;}
@@ -156,13 +156,14 @@ footer > div > span{margin: 0 0 80px; font-size: 15px;}
 @media all and (max-width:1250px){
 
     /* Header */
+    header > a.logo > img{ width: 170px; height: auto;}
     header > nav.slide_nav {opacity: 0; display: none; pointer-events: none;}
     header > nav.side_nav{display: inline-block; opacity: 1; pointer-events: all;}
     
     /* Intro */
     section.main_intro > div > div{transform: translate(-50%, -50%); left: 50%; text-align: center;}
-    section.main_intro > div > div > h1{font-size: 2em;}
-    section.main_intro > div > div > p{font-size: 1em;}
+    section.main_intro > div > div > h1{font-size: 2em; margin-bottom: 50px;}
+    section.main_intro > div > div > p{opacity: 0; pointer-events: none; display: none;}
 
     /* About */
     section.main_about > p{font-size: 1em;}
@@ -172,11 +173,23 @@ footer > div > span{margin: 0 0 80px; font-size: 15px;}
     section.main_work > div > ul > li{}
 
     /* Vid */
-    section.main_vid > p{font-size: 1em;}
-    
+    section.main_vid > p{width: 70%;}
+
+    /* Ment */
+    section.main_ment > ul.ment_txt_wrap > li > p{font-size: 1em;line-height: 36px; width: 70%;}
+
+    /* Brand */
+    section.main_brand{height: 100px;}
+
     /* Hire */
     section.main_hire > div > p{font-size: 1em;}
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:750px){
+    section.main_hire > div > form{width: 100%; }
+    section.main_hire > div > form > div{flex-direction: column; align-items: center;}
+    section.main_hire > div > form > div > input.hire_name{width: 80%;}
+    section.main_hire > div > form > div > input.hire_Email{width: 80%; margin-top: 30px;}
+    section.main_hire > div > form > input.hire_title{width: 80%;}
+    section.main_hire > div > form > textarea.hire_comment{width: 80%;}
 }

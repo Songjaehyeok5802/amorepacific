@@ -34,7 +34,7 @@ header > nav.slide_nav > ul > li > div > ul{margin-left: 40px; }
 header > nav.slide_nav > ul > li > div > ul > ul{float:left;}
 header > nav.slide_nav > ul > li > div > ul > ul > li{margin: 20px 50px;}
 header > nav.slide_nav > ul > li > div > ul > ul > li:first-child{margin: 0px 50px 20px;}
-header > nav.slide_nav > ul > li > div > ul > ul > li > a{ color: #000; font-weight: 400;}
+header > nav.slide_nav > ul > li > div > ul > ul > li > a{ font-weight: 400;}
 header > nav.slide_nav > ul > li > div > ul > ul > li > a > strong{font-weight: 700; }
 
 header > nav.slide_nav > ul > li > div.brands_wrap{}
@@ -46,7 +46,7 @@ header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul >
 header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li.active_brands{opacity: 1; display: flex; pointer-events: all;}
 header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul{margin: 0 0 0 50px;}
 header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li{margin-bottom: 20px;}
-header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li > a{ color: #000;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li > a{}
 header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li > a:hover{text-decoration: underline #0464b3; color: #0464b3;}
 
 
@@ -62,19 +62,25 @@ header > nav.side_nav > div.active_nav > span:nth-child(2){transform: rotate(-45
 header > nav.side_nav > div.side_nav_list_wrap{position: absolute; opacity: 0; pointer-events: none; width: 300px; height: 100vh; background-color: #fff; top: 0; right: 0; z-index: 1; transition: 500ms;}
 header > nav.side_nav > div.active_side_nav{opacity: 1; pointer-events: all;}
 header > nav.side_nav > div.side_nav_list_wrap > ul{margin: 150px auto 0; width: 80%;}
-header > nav.side_nav > div.side_nav_list_wrap > ul > li{border-bottom: 1px solid #c6c6c6; padding: 15px 0;}
-header > nav.side_nav > div.side_nav_list_wrap > ul > li > a{color: #000; }
+header > nav.side_nav > div.side_nav_list_wrap > ul > li{border-bottom: 1px solid #c6c6c6; padding: 15px 0;width: 100%;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > a{position: relative; display: block;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > a::before{position: absolute; content: "\f105"; font-family: fontello; right: 0;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > a:last-child::before{content: "";}
 
 header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one{position: absolute; opacity: 0; pointer-events: none; width: 280px; height: 100vh;  background-color: #fff; top: 0; right: 0; z-index: 2; box-shadow: 0 0 20px 0 #666; transition: 500ms;}
 header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.active_side_nav{opacity: 1; pointer-events: all;}
 header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > h3{margin:0 0 0 10%; height: 80px; display: flex; align-items: center;}
-header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > h3 > a{ color: #000;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > h3 > a{}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > h3 > a > span{font-family: fontello; margin-right: 10px;}
 header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > ul{margin: 150px auto 0; width: 80%;}
 header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > ul > li{border-bottom: 1px solid #c6c6c6; padding: 15px 0;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > ul > li > a{position: relative; display: block;}
+header > nav.side_nav > div.side_nav_list_wrap > ul > li > div.side_nav_one > ul > li > a::before{position: absolute; content: "\f105"; font-family: fontello; right: 0;}
 
 header div.side_nav_two{position: absolute; opacity: 0; pointer-events: none; width: 260px; height: 100vh;  background-color: #fff; top: 0; right: 0; z-index: 3; box-shadow: 0 0 20px 0 #666; transition: 500ms;}
 header div.active_side_nav{opacity: 1; pointer-events: all;}
 header div.side_nav_two > h4{margin:0 0 0 10%; height: 80px; display: flex; align-items: center;}
+header div.side_nav_two > h4 > a > span{font-family: fontello; margin-right: 10px;}
 header div.side_nav_two > ul{margin: 150px auto 0; width: 80%;}
 header div.side_nav_two > ul.scroll_nav_brands{height: 600px; overflow-y: scroll;}
 header div.side_nav_two > ul.scroll_nav_brands::-webkit-scrollbar{background-color: transparent;  width: 2px;}

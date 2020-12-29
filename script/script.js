@@ -37,6 +37,21 @@ function scrollEvent(){
     }
 }
 
+// Header Brands
+const br_title_li = document.querySelectorAll("ul.brands_title_list > li");
+const br_item_li = document.querySelectorAll("ul.brands_item_list > li");
+for(let i = 0 ; i < br_title_li.length ; i++){
+    br_title_li[i].addEventListener("mouseover", ()=>{
+        init_brands_list();
+        br_item_li[i].classList.add("active_brands");
+    })
+}
+function init_brands_list(){
+    for(let i = 0 ; i < br_title_li.length ; i++){
+        br_item_li[i].classList.remove("active_brands");
+    }
+}
+
 
 // Header Nav Bar
 const nav_bar = document.querySelector("div.nav_bar");
@@ -44,6 +59,8 @@ nav_bar.addEventListener("click", click_nav);
 function click_nav(){
     nav_bar.classList.toggle("active_nav");
 }
+
+
 
 
 // Ment Change

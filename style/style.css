@@ -24,8 +24,8 @@ header > nav.slide_nav > ul{ display: inline-block;}
 header > nav.slide_nav > ul > li{float: left; padding: 34px 16px;}
 header > nav.slide_nav > ul > li > a{color: #fff; text-decoration: none; outline: none;font-size: 16px;}
 
-header > nav.slide_nav > ul > li:hover > div{opacity: 1; pointer-events: all;}
-header > nav.slide_nav > ul > li > div{position: absolute; left: 0; margin: 34px 0; padding: 40px 0; width: 100%; background-color: #e4e3e3; display: flex; justify-content: center; opacity: 0; pointer-events: none; transition: 400ms;}
+header > nav.slide_nav > ul > li:hover > div{opacity: 1; pointer-events: all; display: flex;}
+header > nav.slide_nav > ul > li > div{position: absolute; left: 0; margin: 34px 0; padding: 40px 0; width: 100%; background-color: #e4e3e3; display: none; justify-content: center; opacity: 0; pointer-events: none; transition: 400ms;}
 header > nav.slide_nav > ul > li > div > div.nav_title{ width:300px; margin: auto 100px auto 0;}
 header > nav.slide_nav > ul > li > div > div.nav_title > h3{font-size: 30px; margin-bottom: 20px;}
 header > nav.slide_nav > ul > li > div > div.nav_title > p{ font-size: 16px; line-height: 25px;}
@@ -36,11 +36,17 @@ header > nav.slide_nav > ul > li > div > ul > ul > li:first-child{margin: 0px 50
 header > nav.slide_nav > ul > li > div > ul > ul > li > a{text-decoration: none; color: #000; font-weight: 400;}
 header > nav.slide_nav > ul > li > div > ul > ul > li > a > strong{font-weight: 700; }
 
+header > nav.slide_nav > ul > li > div.brands_wrap{}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.nav_title{margin: auto 100px auto 0px;}
 header > nav.slide_nav > ul > li > div.brands_wrap > ul > ul{border-right: 1px solid #343434;}
-header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list > ul > li{display: flex;}
-header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list > ul > li > ul{margin: 0 0 0 50px;}
-header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list > ul > li > ul > li{margin-bottom: 20px;}
-header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list > ul > li > ul > li > a{text-decoration: none; color: #000;}
+header > nav.slide_nav > ul > li > div.brands_wrap > ul > ul.brands_title_list > li > a{color: #6f6f6f; cursor: default;}
+header > nav.slide_nav > ul > li > div.brands_wrap > ul > ul.brands_title_list > li > a:hover{color: #000;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li{opacity: 0; display: none; pointer-events: none;position: absolute;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li.active_brands{opacity: 1; display: flex; pointer-events: all;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul{margin: 0 0 0 50px;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li{margin-bottom: 20px;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li > a{text-decoration: none; color: #000;}
+header > nav.slide_nav > ul > li > div.brands_wrap > div.brands_list_wrap > ul > li > ul > li > a:hover{text-decoration: underline #0464b3; color: #0464b3;}
 
 
 header > nav.side_nav{opacity: 0; display: none; pointer-events: none;  margin-right: 100px;}
@@ -83,7 +89,7 @@ section.main_work > div > ul > li:nth-child(2){animation-delay: 100ms;}
 section.main_work > div > ul > li:nth-child(3){animation-delay: 200ms;}
 section.main_work > div > ul > li:nth-child(4){animation-delay: 300ms;}
 section.main_work > div > ul > li > a{overflow: hidden; display: inline-block; height: 280px; width: 280px;}
-section.main_work > div > ul > li > a > img{ transition: 800ms;}
+section.main_work > div > ul > li > a > img{ transition: 800ms; position: relative;}
 section.main_work > div > ul > li > a > img:hover{transform: scale(1.2);}
 section.main_work > div > ul > li > h2{font-size: 20px; margin: 20px 0 10px;}
 section.main_work > div > ul > li > p{font-size: 16px; line-height: 25px;}

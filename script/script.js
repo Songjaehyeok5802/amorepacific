@@ -39,6 +39,19 @@ function scroll_event(){
     }
 }
 
+// Header Underline
+function hover_header_underline(){
+    const nav_title = document.querySelectorAll("a.slide_nav_title");
+    const select_bar = document.querySelector("span.select_bar");
+
+    for(let i = 0; i < nav_title.length ; i++){
+        nav_title[i].addEventListener("mouseover", ()=>{
+            select_bar.style.width = nav_title[i].offsetWidth + 'px';
+            select_bar.style.left = nav_title[i].offsetLeft + 'px';
+        })
+    }
+}
+
 // Header Brands
 function hover_header_brands(){
     const br_title_li = document.querySelectorAll("ul.brands_title_list > li");
@@ -146,6 +159,7 @@ function input_alert(){
 
 function init(){
     scroll_event();
+    hover_header_underline();
     hover_header_brands();
     side_nav();
     ment_change();

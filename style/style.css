@@ -101,11 +101,11 @@ section.main_intro > div{position: relative; height: 100vh; background: url('../
 section.main_intro > div > div{position: absolute; top: 50%; transform: translateY(-50%); right: 100px; color: #fff;}
 section.main_intro > div > div > h1{font-size: 38px; animation: intro_start 1s linear forwards 200ms; opacity: 0;}
 section.main_intro > div > div > p{font-size: 18px; margin: 20px 0 40px; line-height: 25px; animation: intro_start 1s linear forwards 800ms; opacity: 0;}
-section.main_intro > div > div > button{
-    font: 16px; background: transparent; color: #fff; border: 0; outline: none; padding: 20px 45px;
+section.main_intro > div > div > a{
+    font-size: 16px; background: transparent; color: #fff; outline: none; padding: 20px 45px;
     border: 1px solid #fff; border-radius: 10px; transition: 500ms; animation: intro_start 1s linear forwards 1400ms; opacity: 0;
 }
-section.main_intro > div > div > button:hover{background-color: #fff; color: #000;}
+section.main_intro > div > div > a:hover{background-color: #fff; color: #000;}
 @keyframes intro_start{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -157,7 +157,7 @@ section.main_ment > ul.ment_txt_wrap > li > h2{font-size: 20px; padding-bottom: 
 section.main_ment > ul.ment_txt_wrap > li > p{font-size: 24px;line-height: 36px; width: 600px;}
 
 section.main_ment > ul.list_btn_wrap{position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px;}
-section.main_ment > ul.list_btn_wrap > li{float: left; margin: 0 10px;}
+section.main_ment > ul.list_btn_wrap > li{float: left; width: 15px; height: 15px; display: inline-block; margin: 0 10px;}
 section.main_ment > ul.list_btn_wrap > li > span{width: 10px; height: 10px; background-color: #fff; opacity: 0.5; display: inline-block; border-radius: 50%; cursor: pointer;  transition: 800ms;}
 section.main_ment > ul.list_btn_wrap > li.active_btn > span{opacity: 1; width: 15px; height: 15px;}
 

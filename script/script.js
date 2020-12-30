@@ -97,22 +97,26 @@ function side_nav(){
         dark_filter.classList.toggle("active_filter");
     }
     for(let i = 0 ; i < nav_list_title.length ; i++){
-        nav_list_title[i].addEventListener("click", ()=>{
+        nav_list_title[i].addEventListener("click", (e)=>{
+            e.preventDefault();
             side_nav_one[i].classList.toggle("active_side_nav");
         })
     }
     for(let i = 0 ; i < side_nav_one_title.length ; i++){
-        side_nav_one_title[i].addEventListener("click", ()=>{
+        side_nav_one_title[i].addEventListener("click", (e)=>{
+            e.preventDefault();
             side_nav_one[i].classList.toggle("active_side_nav");
         })
     }
     for(let i = 0 ; i < side_nav_two_title.length ; i++){
-        side_nav_two_title[i].addEventListener("click", ()=>{
+        side_nav_two_title[i].addEventListener("click", (e)=>{
+            e.preventDefault();
             side_nav_two[i].classList.toggle("active_side_nav");
         })
     }
     for(let i = 0 ; i < side_nav_one_btn.length ; i++){
-        side_nav_one_btn[i].addEventListener("click", ()=>{
+        side_nav_one_btn[i].addEventListener("click", (e)=>{
+            e.preventDefault();
             side_nav_two[i].classList.toggle("active_side_nav");
         })
     }

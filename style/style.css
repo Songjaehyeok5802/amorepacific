@@ -3,6 +3,7 @@
 /* Common */
 
 *{font-family: 'Noto Sans KR', sans-serif;}
+body{overflow-x: hidden;}
 h2{font-weight: 500;}
 p{font-weight: 400;}
 a{text-decoration: none; color: #000;}
@@ -16,12 +17,11 @@ input, textarea{font-weight: 300;}
 }
 
 /* Header */
-header{position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; align-items: center; z-index: 999;transition: 800ms; height: 80px;}
-header:hover{background: #0464b3;}
+header{ background: #0464b3; position: fixed; top: 0; left: 0; display: flex; width: 100%; justify-content: space-between; align-items: center; z-index: 999;transition: 800ms; height: 80px;}
 header:hover > nav.slide_nav > span{opacity: 1;}
 header > a.logo{margin: 0 0 0 100px;}
 header > a.logo > img{ width: 270px; height: 25px; display: inline-block;}
-header > nav.slide_nav {margin: 0 100px 0 0; height: 100%;}
+header > nav.slide_nav {margin: 0 80px 0 0; height: 100%;}
 header > nav.slide_nav > ul{ height: 100%;}
 header > nav.slide_nav > ul > li{float: left; height: 100%;}
 header > nav.slide_nav > ul > li > a{color: #fff;  outline: none;font-size: 16px; line-height: 80px; height: 100%; display: inline-block; padding: 0 20px;}
@@ -96,16 +96,31 @@ div.dark_filter{position: fixed; width: 100%; height: 100%; background: #000; op
 div.active_filter{opacity: 0.4;}
 
 /* Intro */
-section.main_intro{}
-section.main_intro > div{position: relative; height: 100vh; background: url('../img/main/main.jpg'); background-position: center; background-repeat: no-repeat; text-align: right;}
-section.main_intro > div > div{position: absolute; top: 50%; transform: translateY(-50%); right: 100px; color: #fff;}
-section.main_intro > div > div > h1{font-size: 38px; animation: intro_start 1s linear forwards 200ms; opacity: 0;}
-section.main_intro > div > div > p{font-size: 18px; margin: 20px 0 40px; line-height: 25px; animation: intro_start 1s linear forwards 800ms; opacity: 0;}
-section.main_intro > div > div > a{
-    font-size: 16px; background: transparent; color: #fff; outline: none; padding: 20px 45px;
+section.main_intro{display: inline-block;  height: 100vh; width: 100%;}
+section.main_intro > button{
+    position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;font-family: fontello;
+    z-index: 1; border-radius: 50%; border: 1px solid #fff; background: transparent; color: #fff; font-size: 20px;
+    outline: none;
+}
+section.main_intro > button.btn_R{right: 100px;}
+section.main_intro > button.btn_L{left: 100px;}
+section.main_intro > button.btn_invisivle{opacity: 0; display: none; pointer-events: none;}
+section.main_intro > div.intro_wrap{position: absolute; background-position: center; background-repeat: no-repeat; background-size: cover; opacity: 1; display: inline-block; height: 100vh; width: 100%; transition: 500ms;}
+section.main_intro > div.content_invisible{opacity: 0; pointer-events: none;}
+section.main_intro > div:nth-child(1){background-image: url('../img/main/main.jpg');}
+section.main_intro > div:nth-child(2){background-image: url('../img/main/main_2.jpg');}
+section.main_intro > div:nth-child(3){background-image: url('../img/main/main_3.jpg');}
+section.main_intro > div > div.intro_content{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);  text-align: center; color: #fff;}
+section.main_intro > div > div.intro_content > h1{font-size: 38px; animation: intro_start 1s linear forwards 200ms; opacity: 0;}
+section.main_intro > div > div.intro_content > p{font-size: 18px; margin: 40px 0 60px; line-height: 25px; animation: intro_start 1s linear forwards 800ms; opacity: 0;}
+section.main_intro > div > div.intro_content > a{
+    font-size: 16px; color: #fff; outline: none; padding: 20px 45px;
     border: 1px solid #fff; border-radius: 10px; transition: 500ms; animation: intro_start 1s linear forwards 1400ms; opacity: 0;
 }
-section.main_intro > div > div > a:hover{background-color: #fff; color: #000;}
+section.main_intro > div:nth-child(3) > div > h1{color: #000;}
+section.main_intro > div:nth-child(3) > div >  p{color: #000;}
+section.main_intro > div:nth-child(3) > div >  a{color: #000; border: 1px solid #000;}
+section.main_intro > div > div.intro_content > a:hover{background-color: #fff; color: #000;}
 @keyframes intro_start{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -200,7 +215,6 @@ footer > div > span{margin: 0 0 80px; font-size: 15px;}
     header > nav.side_nav{display: inline-block; opacity: 1; pointer-events: all;}
     
     /* Intro */
-    section.main_intro > div > div{transform: translate(-50%, -50%); left: 50%; text-align: center;}
     section.main_intro > div > div > h1{font-size: 2em; margin-bottom: 50px;}
     section.main_intro > div > div > p{opacity: 0; pointer-events: none; display: none;}
 

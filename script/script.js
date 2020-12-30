@@ -4,22 +4,12 @@ console.clear();
 
 // Scroll Fade In, Header Bg Change 
 function scroll_event(){
-    const header = document.querySelector("header");
     const work_wrap = document.querySelector("div.work_wrap");
     const work_list = document.querySelectorAll("div.work_wrap > ul > li");
     const fade_in_contents = document.querySelectorAll(".scrollAni");
     
     window.addEventListener('scroll', scrollEvent);
     function scrollEvent(){
-        let curScroll = document.documentElement.scrollTop;
-    
-        // Header Bg Change
-        if(curScroll < 100){
-            header.style.background = "";
-        }else{
-            header.style.background = "#0464b3";
-        }
-    
         // List Fade In
         let work_wrap_top = work_wrap.getBoundingClientRect().top;
         if(work_wrap_top < window.innerHeight * 0.9){
@@ -123,6 +113,42 @@ function side_nav(){
 
 
 }
+// Intro Bg Change
+function intro_bg_change(){
+    const btn_R = document.querySelector("button.btn_R");
+    const btn_L = document.querySelector("button.btn_L");
+    const intro_bg = document.querySelectorAll("div.intro_wrap");
+    let cur_index = 0;
+    btn_R.addEventListener("click", click_btn_R);
+    btn_L.addEventListener("click", click_btn_L);
+    function click_btn_R(){
+        cur_index++;
+        init_content();
+        intro_bg[cur_index].classList.remove("content_invisible");
+    }
+    function click_btn_L(){
+        cur_index--;
+        init_content();
+        intro_bg[cur_index].classList.remove("content_invisible");
+    }
+    function init_content(){
+        console.log(cur_index);
+        if(cur_index == 0){
+            btn_L.classList.add("btn_invisivle");
+            btn_R.classList.remove("btn_invisivle");
+        }else if(cur_index == intro_bg.length - 1){
+            btn_R.classList.add("btn_invisivle");
+            btn_L.classList.remove("btn_invisivle");
+        }else{
+            btn_R.classList.remove("btn_invisivle");
+            btn_L.classList.remove("btn_invisivle");
+        }
+        for(let i = 0 ; i < intro_bg.length ; i++){
+            intro_bg[i].classList.add("content_invisible");
+        }
+    }
+
+}
 
 // Ment Change
 function ment_change(){
@@ -166,6 +192,7 @@ function init(){
     hover_header_underline();
     hover_header_brands();
     side_nav();
+    intro_bg_change();
     ment_change();
 }
 init();

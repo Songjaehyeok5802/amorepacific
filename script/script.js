@@ -118,35 +118,39 @@ function intro_bg_change(){
     const btn_R = document.querySelector("button.btn_R");
     const btn_L = document.querySelector("button.btn_L");
     const intro_bg = document.querySelectorAll("div.intro_wrap");
+    const bg_loading_bar = document.querySelector("span.bg_loading_bar");
     let cur_index = 0;
     btn_R.addEventListener("click", click_btn_R);
     btn_L.addEventListener("click", click_btn_L);
     function click_btn_R(){
         cur_index++;
         init_content();
-        intro_bg[cur_index].classList.remove("content_invisible");
     }
     function click_btn_L(){
         cur_index--;
         init_content();
-        intro_bg[cur_index].classList.remove("content_invisible");
     }
     function init_content(){
-        console.log(cur_index);
-        if(cur_index == 0){
-            btn_L.classList.add("btn_invisivle");
-            btn_R.classList.remove("btn_invisivle");
-        }else if(cur_index == intro_bg.length - 1){
-            btn_R.classList.add("btn_invisivle");
-            btn_L.classList.remove("btn_invisivle");
-        }else{
-            btn_R.classList.remove("btn_invisivle");
-            btn_L.classList.remove("btn_invisivle");
-        }
         for(let i = 0 ; i < intro_bg.length ; i++){
             intro_bg[i].classList.add("content_invisible");
         }
+        if(cur_index < 0){
+            cur_index = intro_bg.length - 1;
+        }else if(cur_index > intro_bg.length - 1){
+            cur_index = 0;
+        }
+        intro_bg[cur_index].classList.remove("content_invisible");
+        bg_loading_bar.classList.remove("changeAni");
+        setTimeout(()=>{
+            bg_loading_bar.classList.add("changeAni");
+            console.log(132);
+        }, 10)
     }
+
+    setInterval(()=>{
+        cur_index++;
+        init_content();
+    }, 10000)
 
 }
 

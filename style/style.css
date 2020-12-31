@@ -98,10 +98,11 @@ div.active_filter{opacity: 0.4;}
 /* Intro */
 section.main_intro{display: inline-block;  height: 100vh; width: 100%;}
 section.main_intro > button{
-    position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;font-family: fontello;
+    position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; font-family: fontello;
     z-index: 1; border-radius: 50%; border: 1px solid #fff; background: transparent; color: #fff; font-size: 20px;
-    outline: none;
+    outline: none; transition: 500ms;
 }
+section.main_intro > button:hover{background: #fff; color: #0464b3;}
 section.main_intro > button.btn_R{right: 100px;}
 section.main_intro > button.btn_L{left: 100px;}
 section.main_intro > button.btn_invisivle{opacity: 0; display: none; pointer-events: none;}
@@ -124,6 +125,12 @@ section.main_intro > div > div.intro_content > a:hover{background-color: #fff; c
 @keyframes intro_start{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+section.main_intro > span.bg_loading_bar{position: absolute; display: inline-block; height: 10px; background: #61b8ff; bottom: 0;}
+section.main_intro > span.changeAni{animation: bg_change_bar 10s linear forwards;}
+@keyframes bg_change_bar{
+    0%{width: 0;}
+    100%{width: 100vw;}
 }
 
 /* About */
@@ -177,8 +184,16 @@ section.main_ment > ul.list_btn_wrap > li > span{width: 10px; height: 10px; back
 section.main_ment > ul.list_btn_wrap > li.active_btn > span{opacity: 1; width: 15px; height: 15px;}
 
 /* Brand */
-section.main_brand{height: 200px;}
-section.main_brand > ul{width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+section.main_brand{height: 200px;position: relative;}
+section.main_brand > ul{
+    width: 200vw; height: 100%; display: flex; justify-content: space-around; align-items: center;
+    position: absolute;
+    animation: brand_flow_ani 10s linear infinite;
+}
+@keyframes brand_flow_ani{
+    0%{ left: 0;}
+    100%{ left: -100vw;}
+}
 section.main_brand > ul > li{width: 25%; text-align: center;}
 section.main_brand > ul > li > img{width: 80%;}
 
@@ -217,6 +232,9 @@ footer > div > span{margin: 0 0 80px; font-size: 15px;}
     /* Intro */
     section.main_intro > div > div > h1{font-size: 2em; margin-bottom: 50px;}
     section.main_intro > div > div > p{opacity: 0; pointer-events: none; display: none;}
+    section.main_intro > button{width: 40px; height: 40px;}
+    section.main_intro > button.btn_R{right: 50px;}
+    section.main_intro > button.btn_L{left: 50px;}
 
     /* About */
     section.main_about > p{font-size: 1em;}
@@ -239,6 +257,9 @@ footer > div > span{margin: 0 0 80px; font-size: 15px;}
 }
 
 @media all and (max-width:750px){
+
+    section.main_intro > button{opacity: 0; display: none; pointer-events: none;}
+
     section.main_hire > div > form{width: 100%; }
     section.main_hire > div > form > div{flex-direction: column; align-items: center;}
     section.main_hire > div > form > div > input.hire_name{width: 80%;}

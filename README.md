@@ -15,17 +15,21 @@
 
 ### Header 
 상단에 네비게이션과 로고를 배치하고 position : fixed; 로 고정켰습니다.
+
 네비게이션바에 마우스 호버 시 텍스트 하단에 바가 따라다니며 해당하는 창이 뜨도록 제작하였습니다.
-<img src="./img/readme/header.png">
+<img src="./img/readme/header.png"width="300px">
 미디어쿼리를 사용하여 브라우저의 크기가 작아지면 햄버거바가 나타나게 하였습니다.
+
 클릭시 좌측에서 창이 뜨도록 제작하였습니다. 창이 뜨고 사라지는것은
+
 자바스크립트에서 toggle을 활용하여 class를 추가, 제거시켜 이벤트를 만들었습니다.
+
 fontello 를 사용하여 아이콘을 넣었습니다.
 <div>
-    <img src="./img/readme/header_side_01.png">
-    <img src="./img/readme/header_side_02.png">
-    <img src="./img/readme/header_side_03.png">
-    <img src="./img/readme/header_side_04.png">
+    <img src="./img/readme/header_side_01.png" width="300px">
+    <img src="./img/readme/header_side_02.png"width="300px">
+    <img src="./img/readme/header_side_03.png"width="300px">
+    <img src="./img/readme/header_side_04.png"width="300px">
 </div>
 
 

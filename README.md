@@ -18,17 +18,20 @@
 
 ### Header 
 상단에 네비게이션과 로고를 배치하고 position : fixed; 로 고정켰습니다.   
-네비게이션바에 마우스 호버 시 텍스트 하단에 바가 따라다니며 해당하는 창이 뜨도록 제작하였습니다.   
-<img src="./img/readme/header/header.png" width="400px">   
+네비게이션바에 마우스 호버 시 텍스트 하단에 바가 따라다니며 해당하는 창이 뜨도록 제작하였습니다.  
+
+<img src="./img/readme/header/header.png" width="100%">   
+
 미디어쿼리를 사용하여 브라우저의 크기가 작아지면 햄버거바가 나타나게 하였습니다.   
 클릭시 좌측에서 창이 뜨도록 제작하였습니다. 창이 뜨고 사라지는것은   
 자바스크립트에서 toggle을 활용하여 class를 추가, 제거시켜 이벤트를 만들었습니다.   
 fontello 를 사용하여 아이콘을 넣었습니다.   
+
 <div>
-    <img src="./img/readme/header/header_side_01.png" width="200px">
-    <img src="./img/readme/header/header_side_02.png" width="200px">
-    <img src="./img/readme/header/header_side_03.png" width="200px">
-    <img src="./img/readme/header/header_side_04.png" width="200px">
+    <img src="./img/readme/header/header_side_01.png" width="20%">
+    <img src="./img/readme/header/header_side_02.png" width="20%">
+    <img src="./img/readme/header/header_side_03.png" width="20%">
+    <img src="./img/readme/header/header_side_04.png" width="20%">
 </div>   
 
 
@@ -40,9 +43,9 @@ div에 배경화면을 설정하여 이미지를 넣었고 텍스트들을 화�
 하단의 로딩바는 CSS @keyframes 을 활용하여 width 값을 조절하였습니다.    
 미디어쿼리를 사용하여 브라우저의 크기가 작아지면 텍스트, 버튼의 크기와 활성 유무가 달라집니다.    
 <div>
-    <img src="./img/readme/intro/intro_00.jpg" width="200px">
-    <img src="./img/readme/intro/intro_01.jpg" width="200px">
-    <img src="./img/readme/intro/intro_02.jpg" width="200px">
+    <img src="./img/readme/intro/intro_00.jpg" width="30%">
+    <img src="./img/readme/intro/intro_01.jpg" width="30%">
+    <img src="./img/readme/intro/intro_02.jpg" width="30%">
 </div> 
 
 
@@ -50,31 +53,36 @@ div에 배경화면을 설정하여 이미지를 넣었고 텍스트들을 화�
 스크롤 시 보이는 영역입니다.    
 해당 영역이 화면의 일정 부분 이상 위치하게 되면 투명도를 조절하여 나타나게 하였습니다.    
 미디어쿼리와 display: flex; 를 활용하여 브라우저의 크기가 줄어들어도 잘 보이도록 만들었습니다.   
+
 <div>
-    <img src="./img/readme/about_work_vid/about_work.jpg" width="200px">
-    <img src="./img/readme/about_work_vid/vid.jpg" width="200px">
+    <img src="./img/readme/about_work_vid/about_work.jpg" width="40%">
+    <img src="./img/readme/about_work_vid/vid.jpg" width="40%">
 </div> 
 
 ### Ment
-아래의 버튼 클릭 시 오퍼시티를 조절하여 텍스트가 바뀌도록 만들었습니다.    
-<img src="./img/readme/ment/ment.jpg" width="200px">
+아래의 버튼 클릭 시 오퍼시티를 조절하여 텍스트가 바뀌도록 만들었습니다.
+
+<img src="./img/readme/ment/ment.jpg" width="100%">
 
 
 ### Brands
 브랜드 이미지들을 가로로 배치 후 CSS @keyframes 을 활용하여    
 무한히 움직이도록 만들었습니다.    
-<img src="./img/readme/brands/brands.jpg" width="200px">
+
+<img src="./img/readme/brands/brands.jpg" width="100%">
 
 
 ### Hire
 input 창을 제작 후 배치하였습니다.     
 자바스크립트를 활용하여 빈 창이 있을 경우와 모든 창을 채웠을 경우 각각 다른 알람이 뜨도록 하였습니다.    
-<img src="./img/readme/hire/hire.jpg" width="200px">
+
+<img src="./img/readme/hire/hire.jpg" width="100%">
 
 
 ### Footer
 페이지 하단에는 푸터를 제작하였고 텍트들을 중앙에 배치하였습니다.    
-<img src="./img/readme/footer/footer.jpg" width="200px">
+
+<img src="./img/readme/footer/footer.jpg" width="100%">
    
 
 
